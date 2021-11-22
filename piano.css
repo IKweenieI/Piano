@@ -1,0 +1,166 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* reset over */
+
+*::selection {
+    background-color: #e3ccf8;
+    color: white;
+}
+
+body {
+    background-color: #c8e7ff;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    display: flex;
+    font-size: 70px;
+    justify-content: center;
+    margin: 30px;
+    padding: 20px;
+    color: white;
+    line-height: 50px;
+    letter-spacing: 2px;
+    text-decoration: 5px #e3ccf8 solid underline;
+    font-weight: 100;
+}
+
+.piano-main {
+    --variable-Width-White: 150px;
+    min-height: --variable-Width-White;
+    vertical-align: middle;
+    justify-content: center;
+    margin: auto auto;
+    display: flex;
+
+    --variable-Width-Black: calc(var(--variable-Width-White)*0.70)
+}
+
+.white:first-child {
+    border-left: 1px solid black;
+}
+
+.white {
+    width: var(--variable-Width-White);
+    height: calc(var(--variable-Width-White)*4);
+    background-color: white;
+    z-index: 1;
+    box-sizing: border-box;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.black {
+    width: var( --variable-Width-Black);
+    height: calc(var(--variable-Width-White)*2.4);
+    background-color: black;
+    border: 1px black solid;
+    box-sizing: border-box;
+    margin-left: calc(var( --variable-Width-Black)/-2);
+    margin-right: calc(var( --variable-Width-Black)/-2);
+    z-index: 2;
+}
+
+.white.index-0, .black.index-0 {
+    background-color: #e3ccf8;
+}
+
+.white.index-1, .black.index-1 {
+    background-color: #b2f7f7;
+}
+
+.white.index-2, .black.index-2 {
+    background-color: #F3C4FB;
+}
+
+.white.index-3, .black.index-3 {
+    background-color: #cdf39b;
+}
+
+.white.index-4, .black.index-4 {
+    background-color: #E5B3FE;
+}
+
+.white.index-5, .black.index-5 {
+    background-color: #aff3ff;
+}
+
+.white.index-6, .black.index-6 {
+    background-color: #ABD9CE;
+}
+
+.white.index-7, .black.index-7 {
+    background-color: #D8BBFF;
+}
+
+.white.index-8, .black.index-8 {
+    background-color: #DCDBD9;
+}
+
+.white.index-9, .black.index-9 {
+    background-color: #C8E7FF;
+}
+
+.white.index-10, .black.index-10 {
+    background-color: #C0FDFF;
+}
+
+.instructions {
+    color: white;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    font-size: 30px;
+    background-color: #e3ccf8;
+    border: 5px #fff solid;
+    box-sizing: content-box;
+}
+
+.instructions * {
+    padding: 10px;
+}
+
+.instructions h2 {
+    text-decoration: 5px #c8e7ff solid underline;
+}
